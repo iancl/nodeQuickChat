@@ -1,0 +1,51 @@
+<section>
+
+<script type="text/template" class="template" id="Login">
+<!-- LOGIN -->
+	<div class="header">
+		<h1 class="text-muted">Quick Chat</h1>
+   	</div>
+
+	<div class="jumbotron">
+		<h2>Enter your name:</h2>
+		<input type="text" id="nameInput" class="form-control" maxlength="12" />
+		<div class="clear"></div>
+		<button id="login" class="btn btn-lg btn-success">Enter Chat!</button>
+		<p>I did not spend a lot of time on the layout and styles :D</p>
+	</div>
+<!-- END LOGIN -->
+</script>
+
+
+<script type="text/template" class="template" id="Chat">
+<!-- ChatView -->
+	<div class="header">
+		<button id="logoutBtn" class="btn btn-md btn-danger">Logout <%= name %></button>
+		<h1 class="text-muted">Quick Chat</h1>
+   	</div>
+	<div class="chatContainer">
+	</div>
+
+	<div class="form">
+      <input id="chatMessage" class="form-control" autocomplete="off" /><button class="btn btn-md btn-success" id="sendMessage">Send</button>
+    </div>
+
+<!-- END ChatView -->
+</script>
+
+<script type="text/template" class="template" id="List">
+<!-- List -->
+	<div class="row listHeaderContainer"><h5 class="listHeader"><%= header %></h4></div>
+	<div class="listContainer row">
+		<div class="list">
+		<% if (typeof(message) != "undefined") { %>
+		    <p class="system_message green">[System]: <%= message %></p>
+		<% } %>
+		
+		</div>
+	</div>
+<!-- END List -->
+</script>
+
+
+</section>

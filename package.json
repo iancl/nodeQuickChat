@@ -1,0 +1,20 @@
+{
+  "name": "quickChat",
+  "version": "0.1.0",
+  "description": "very simple socket.io chat demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ian Calderon",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.9.5",
+    "html-minifier": "^0.6.9",
+    "jshint": "^2.5.6",
+    "node-uuid": "^1.4.1",
+    "socket.io": "^1.1.0",
+    "uglify-js": "^2.4.15",
+    "uglifycss": "0.0.9"
+  }
+}
